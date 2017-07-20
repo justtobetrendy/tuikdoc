@@ -25,6 +25,11 @@
             <div class="sg-nav">
                 <img class="sg-nav__logo" src="logo.png" alt="TEMPO UI KIT" width="179" height="46" />
                 <h2 class="sg-nav__title">Overview</h2>
+                <ol class="sg-nav__links">
+                  <li class="sg-nav__links__element sg-nav__links__element-is-active ">
+                      <a href="changelog">Changelog</a>
+                  </li>
+                </ol>
                 <h2 class="sg-nav__title">Foundations</h2>
                 <h2 class="sg-nav__title">Components</h2>
                 <ol class="sg-nav__links">
@@ -36,6 +41,14 @@
                     
                       <li class="sg-nav__links__element ">
                           <a href="components/buttongroups">Button Groups</a>
+                          
+                      </li>
+                    
+                      <li class="sg-nav__links__element ">
+                          <a href="components/forms">Forms</a>
+                          
+                              <em class="sg-draft-notification">Draft</em>
+
                           
                       </li>
                     
@@ -59,8 +72,11 @@
             <div class="sg-content">
                 <h1 class="sg-h1">Changelog</h1>
 
-<h2>[Unreleased]</h2><h2>Added</h2><ul>
-<li>Text fields documentation reviewd</li>
+<section class="sg-changelog">
+    <h2>[Unreleased]</h2><h2>[0.4.0] - 2017-07-20</h2><h2>Added</h2><ul>
+<li>Forms (.tuiForm)</li>
+<li>Changelogs added to documentation</li>
+<li>Text fields documentation reviewed</li>
 </ul>
 <h2>[0.3.1] - 2017-07-18</h2><h2>Fixed</h2><ul>
 <li>Enforced text-decoration and color on .tuiButton :hover, :active and :focus pseudo class selectors to fix issues caused by aui.css</li>
@@ -97,6 +113,8 @@
 <li>Build CSS and SVG (npm run dist)</li>
 <li>Watch CSS and SVG (npm run watch-)</li>
 </ul>
+
+</section>
             </div>
         </section>
     <article>
