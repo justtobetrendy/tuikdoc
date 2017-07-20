@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
+    <base href="/tuikdoc/"></base>
     <title>
         
             Text Fields - Tempo UI Kit and Guidelines
         
     </title>
     <meta name="description" content="Text Fields" />
-    <link rel="stylesheet" href="/vendors/highlight/default.css">
-    <link rel="stylesheet" href="/css/main.css" type="text/css">
+    <link rel="stylesheet" href="vendors/highlight/default.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
-    <script src="/vendors/highlight/highlight.js"></script>
+    <script src="vendors/highlight/highlight.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
     <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/aui/5.2/css/aui.css" media="all">
@@ -21,24 +23,24 @@
     <article class="sg">
         <nav class="sg-section sg-section--nav">
             <div class="sg-nav">
-                <img class="sg-nav__logo" src="/logo.png" alt="TEMPO UI KIT" width="179" height="46" />
+                <img class="sg-nav__logo" src="logo.png" alt="TEMPO UI KIT" width="179" height="46" />
                 <h2 class="sg-nav__title">Overview</h2>
                 <h2 class="sg-nav__title">Foundations</h2>
                 <h2 class="sg-nav__title">Components</h2>
                 <ol class="sg-nav__links">
                     
                       <li class="sg-nav__links__element ">
-                          <a href="/components/buttons">Buttons</a>
+                          <a href="components/buttons">Buttons</a>
                           
                       </li>
                     
                       <li class="sg-nav__links__element ">
-                          <a href="/components/buttongroups">Button Groups</a>
+                          <a href="components/buttongroups">Button Groups</a>
                           
                       </li>
                     
                       <li class="sg-nav__links__element ">
-                          <a href="/components/forms">Forms</a>
+                          <a href="components/forms">Forms</a>
                           
                               <em class="sg-draft-notification">Draft</em>
 
@@ -46,7 +48,7 @@
                       </li>
                     
                       <li class="sg-nav__links__element ">
-                          <a href="/components/labels">Labels</a>
+                          <a href="components/labels">Labels</a>
                           
                               <em class="sg-draft-notification">Draft</em>
 
@@ -54,10 +56,7 @@
                       </li>
                     
                       <li class="sg-nav__links__element sg-nav__links__element-is-active ">
-                          <a href="/components/textfields">Text Fields</a>
-                          
-                              <em class="sg-draft-notification">Draft</em>
-
+                          <a href="components/textfields">Text Fields</a>
                           
                       </li>
                     
@@ -69,15 +68,13 @@
                 <h1 class="sg-h1">
     Text Fields
      
-        <em class="sg-draft-notification">Draft</em>
-
-     
 </h1>
 
 
-<p class="sg-p">Use text fields to help people enter, select and search for text.</p>
+<p class="sg-p">Use text fields to allow users to enter, select and search for text.</p>
 
-<h2 class="sg-h2">Default single line</h2>
+<h2 class="sg-h2">Single line</h2>
+<h3 class="sg-h3">Default</h3>
 
 
 
@@ -97,8 +94,8 @@
 </article>
 
 
-<h2 class="sg-h2">Place holder</h2>
-<p class="sg-p">Informs users what they need to do to interact with the field (e.g. 'Start typing to see names'), or shows an example of a typical entry (for example, 'e.g. My first project'). Examples must start with 'e.g.' Only supply placeholder text where clarification is required, do not overuse it.</p>
+<h3 class="sg-h3">Place holder</h3>
+<p class="sg-p">Placeholder text provides users with a short hint or example that describes the expected value for the text field. For example, 'Start typing to see names', or shows an example of a typical entry such as 'My first project'. You must prefix examples with 'e.g.' Only provide placeholder text where clarification is essential. In most cases, the label will provide sufficient guidance.</p>
 
 
 <article class="sg-example" id="textFieldsPlaceHolder">
@@ -113,8 +110,8 @@
 </article>
 
 
-<h2 class="sg-h2">Disabled</h2>
-<p class="sg-p">Only show disabled fields if users need to know that the control might be available to them in other scenarios.</p>
+<h3 class="sg-h3">Disabled</h3>
+<p class="sg-p">Use disabled fields when there is a prerequisite condition that must be met before the user can enter a value, or when there is a scenario where that field would become available.</p>
 
 
 
@@ -136,7 +133,8 @@
 </article>
 
 
-<h2 class="sg-h2">Default multi line</h2>
+<h2 class="sg-h2">Multi-line</h2>
+<h3 class="sg-h3">Default</h3>
 
 
 
@@ -156,8 +154,8 @@
 </article>
 
 
-<h2 class="sg-h2">Place holder</h2>
-<p class="sg-p">Lets people know how they should use the field (e.g. 'Start typing to see names') or you can show an example (e.g. 'My first project'). Only supply where clarification is required, try not to overuse it.</p>
+<h3 class="sg-h3">Place holder</h3>
+<p class="sg-p">Placeholder text provides users with a short hint or example that describes the expected value for the text field. For example, 'Start typing to see names', or shows an example of a typical entry such as 'My first project'. You must prefix examples with 'e.g.' Only provide placeholder text where clarification is essential. In most cases, the label will provide sufficient guidance.</p>
 
 
 <article class="sg-example" id="textFieldsMultiLinePlaceHolder">
@@ -172,8 +170,8 @@
 </article>
 
 
-<h2 class="sg-h2">Disabled</h2>
-<p class="sg-p">Only show disabled fields if users need to know that the control might be available to them in other scenarios.</p>
+<h3 class="sg-h3">Disabled</h3>
+<p class="sg-p">Use disabled fields when there is a prerequisite condition that must be met before the user can enter a value, or when there is a scenario where that field would become available.</p>
 
 
 
@@ -195,8 +193,8 @@
 </article>
 
 
-<h2 class="sg-h2">Resize</h2>
-<p class="sg-p">Multi line textboxes must remain resizable at all times. It can be restricted to vertical only resize but there should always be a way to make the textbox larger.</p>
+<h3 class="sg-h3">Resizability</h3>
+<p class="sg-p">Multi-line text fields must remain resizable at all times. You can restrict It to resize vertically only, but there should always be a way to make the text field larger.</p>
 
 
 
@@ -219,10 +217,10 @@
 <h2 class="sg-h2">Guidelines</h2>
 
 <h3 class="sg-h3">Length</h3>
-<p class="sg-p">The length of the field should communicate the intended length of content. These lengths also apply for other form controls of a similar shape, like drop-down menus and text boxes.</p>
+<p class="sg-p">The length of the text field should reflect the expected length of content. This guideline applies to any form controls with a similar shape, such as drop-down menus and text boxes. Keep localization in mind when determining the length of your fields.</p>
 
 <h3 class="sg-h3">Accessibility</h3>
-<p class="sg-p">Auto focus the first field by default. Users should then be able to tab through elements in the form in a logical sequence. This maintains Section 508 accessibility compliance.</p>
+<p class="sg-p">Auto-focus the first field by default. Users should then be able to tab through elements in the form in a logical sequence. This maintains Section 508 accessibility compliance.</p>
             </div>
         </section>
     <article>
