@@ -16,6 +16,8 @@
     <script src="vendors/highlight/highlight.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
     <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/aui/5.2/css/aui.css" media="all">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/aui/5.2/css/aui-experimental.css" media="all"> -->
   </head>
@@ -63,6 +65,9 @@
                       <li class="sg-nav__links__element sg-nav__links__element-is-active ">
                           <a href="components/textfields">Text Fields</a>
                           
+                              <em class="sg-draft-notification">Draft</em>
+
+                          
                       </li>
                     
                 </ol>
@@ -72,6 +77,9 @@
             <div class="sg-content">
                 <h1 class="sg-h1">
     Text Fields
+     
+        <em class="sg-draft-notification">Draft</em>
+
      
 </h1>
 
@@ -136,6 +144,28 @@
     </section>
     
 </article>
+
+
+<h3 class="sg-h3">Size</h3>
+<p class="sg-p">Different modifiers are available to set the input width. Use <em>tuiTextField--date</em> for ISO date inputs and <em>tuiTextField--hours</em> for time entry.</p>
+
+
+
+<article class="sg-example" id="textFieldsSize">
+    <section class="sg-example__render">
+        <input class="tuiTextField tuiTextField--date" type="text" placeholder="2017-01-01">
+<input class="tuiTextField tuiTextField--hours" type="text" placeholder="00:01">
+
+    </section>
+    
+    <section class="sg-example__source">
+        <pre><code class="html">&lt;input class=&#34;tuiTextField tuiTextField--date&#34; type=&#34;text&#34; placeholder=&#34;2017-01-01&#34; /&gt;
+&lt;input class=&#34;tuiTextField tuiTextField--hours&#34; type=&#34;text&#34; placeholder=&#34;00:01&#34; /&gt;
+</code></pre>
+    </section>
+    
+</article>
+
 
 
 <h2 class="sg-h2">Multi-line</h2>

@@ -16,6 +16,8 @@
     <script src="vendors/highlight/highlight.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
     <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/aui/5.2/css/aui.css" media="all">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/aui/5.2/css/aui-experimental.css" media="all"> -->
   </head>
@@ -63,6 +65,9 @@
                       <li class="sg-nav__links__element ">
                           <a href="components/textfields">Text Fields</a>
                           
+                              <em class="sg-draft-notification">Draft</em>
+
+                          
                       </li>
                     
                 </ol>
@@ -72,7 +77,7 @@
             <div class="sg-content">
                 <style>
     .sg-example__render .tuiForm { width: 400px; background-color: #f8f8f8; }
-    .sg-example__render .tuiForm .tuiTextField { width: 100%; }
+    .sg-example__render .tuiForm .tuiTextField:not(.tuiTextField--date) { width: 100%; }
 </style>
 
 <h1 class="sg-h1">
@@ -93,6 +98,8 @@
 <h2 class="sg-h2">Default form layouts</h2>
 <p class="sg-p">
     A form <em>tuiForm</em> is composed of <em>tuiForm__row</em> elements. Each is composed of at least one column <em>tuiForm__col</em>. The column hosting the field label must apply the <em>tuiForm__col--label</em> modifier.</p>
+
+<p class="sg-p">There's two row modifiers <em>tuiForm__row--checkbox</em> and <em>tuiForm__row--no-input</em> availble to help align checkbox and non-input fields label.</p>
 <dl>
     <dt class="sg-dt">Labels</dt>
     <dd class="sg-dd">Standard label alignment is left-aligned with the field to its right.</dd>
@@ -117,13 +124,21 @@
            <textarea class="tuiTextField" id="fdF1" rows="7" placeholder="Description"></textarea>
        </div>
    </div>
-   <div class="tuiForm__row">
+   <div class="tuiForm__row tuiForm__row--checkbox">
        <div class="tuiForm__col tuiForm__col--label">
            <label class="tuiLabel" for="fdF2">Option 1</label>
        </div>
        <div class="tuiForm__col">
            <input type="checkbox" id="fdF2">
            <label class="tuiLabel" for="fdF3"> Option 2 <input type="checkbox" id="fdF3"></label>
+       </div>
+   </div>
+   <div class="tuiForm__row tuiForm__row--no-input">
+       <div class="tuiForm__col tuiForm__col--label">
+           <label class="tuiLabel" for="fdF0">User</label>
+       </div>
+       <div class="tuiForm__col">
+           <span>User name</span>
        </div>
    </div>
    <div class="tuiForm__row">
@@ -139,9 +154,9 @@
            <label class="tuiLabel" for="fdF5">Date</label>
        </div>
        <div class="tuiForm__col">
-           <input class="tuiTextField" type="text" id="fdF5" style="width:50px">
+           <input class="tuiTextField tuiTextField--date" type="text" id="fdF5">
            <label class="tuiLabel" for="fdF6">to</label>
-           <input class="tuiTextField" type="text" id="fdF6" style="width:50px"> 
+           <input class="tuiTextField tuiTextField--date" type="text" id="fdF6"> 
        </div>
    </div>
    <div class="tuiForm__row">
@@ -168,13 +183,21 @@
            &lt;textarea class=&#34;tuiTextField&#34; id=&#34;fdF1&#34; rows=&#34;7&#34; placeholder=&#34;Description&#34;&gt;&lt;/textarea&gt;
        &lt;/div&gt;
    &lt;/div&gt;
-   &lt;div class=&#34;tuiForm__row&#34;&gt;
+   &lt;div class=&#34;tuiForm__row tuiForm__row--checkbox&#34;&gt;
        &lt;div class=&#34;tuiForm__col tuiForm__col--label&#34;&gt;
            &lt;label class=&#34;tuiLabel&#34; for=&#34;fdF2&#34;&gt;Option 1&lt;/label&gt;
        &lt;/div&gt;
        &lt;div class=&#34;tuiForm__col&#34;&gt;
            &lt;input type=&#34;checkbox&#34; id=&#34;fdF2&#34; /&gt;
            &lt;label class=&#34;tuiLabel&#34; for=&#34;fdF3&#34;&gt; Option 2 &lt;input type=&#34;checkbox&#34; id=&#34;fdF3&#34; /&gt;&lt;/label&gt;
+       &lt;/div&gt;
+   &lt;/div&gt;
+   &lt;div class=&#34;tuiForm__row tuiForm__row--no-input&#34;&gt;
+       &lt;div class=&#34;tuiForm__col tuiForm__col--label&#34;&gt;
+           &lt;label class=&#34;tuiLabel&#34; for=&#34;fdF0&#34;&gt;User&lt;/label&gt;
+       &lt;/div&gt;
+       &lt;div class=&#34;tuiForm__col&#34;&gt;
+           &lt;span&gt;User name&lt;/span&gt;
        &lt;/div&gt;
    &lt;/div&gt;
    &lt;div class=&#34;tuiForm__row&#34;&gt;
@@ -190,9 +213,9 @@
            &lt;label class=&#34;tuiLabel&#34; for=&#34;fdF5&#34;&gt;Date&lt;/label&gt;
        &lt;/div&gt;
        &lt;div class=&#34;tuiForm__col&#34;&gt;
-           &lt;input class=&#34;tuiTextField&#34; type=&#34;text&#34; id=&#34;fdF5&#34; style=&#34;width:50px&#34; /&gt;
+           &lt;input class=&#34;tuiTextField tuiTextField--date&#34; type=&#34;text&#34; id=&#34;fdF5&#34; /&gt;
            &lt;label class=&#34;tuiLabel&#34; for=&#34;fdF6&#34;&gt;to&lt;/label&gt;
-           &lt;input class=&#34;tuiTextField&#34; type=&#34;text&#34; id=&#34;fdF6&#34; style=&#34;width:50px&#34; /&gt; 
+           &lt;input class=&#34;tuiTextField tuiTextField--date&#34; type=&#34;text&#34; id=&#34;fdF6&#34; /&gt; 
        &lt;/div&gt;
    &lt;/div&gt;
    &lt;div class=&#34;tuiForm__row&#34;&gt;
