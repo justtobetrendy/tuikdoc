@@ -5,10 +5,10 @@
     <base href="/"></base>
     <title>
         
-            Buttons - Tempo UI Kit and Guidelines
+            Lozenges - Tempo UI Kit and Guidelines
         
     </title>
-    <meta name="description" content="Buttons" />
+    <meta name="description" content="Lozenges" />
 
     <link rel="stylesheet" href="vendors/highlight/default.css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
@@ -312,7 +312,7 @@
                 <h2 class="sg-nav__title">Components</h2>
                 <ol class="sg-nav__links">
                     
-                      <li class="sg-nav__links__element sg-nav__links__element-is-active ">
+                      <li class="sg-nav__links__element ">
                           <a href="components/buttons">Buttons</a>
                           
                       </li>
@@ -335,7 +335,7 @@
                           
                       </li>
                     
-                      <li class="sg-nav__links__element ">
+                      <li class="sg-nav__links__element sg-nav__links__element-is-active ">
                           <a href="components/lozenges">Lozenges</a>
                           
                               <em class="sg-draft-notification">Draft</em>
@@ -361,220 +361,92 @@
         
     
 
-    Buttons
+    Lozenges
+    
+        <em class="sg-draft-notification">Draft</em>
+
     
 </h1>
 
 
-<p class="sg-p">Use buttons to trigger an immediate action such as saving a document. They are used in forms, toolbars, dialog footers and as stand-alone action triggers.</p>
+<p class="sg-p">Text lozenges filled with colour, primarily used for displaying status. Available in both primary and subtle versions. Specific colors denote meanings that users can learn and recognise across our systems to become more efficient. Use primary lozenges by default. Consider using subtle lozenges for long tables with repeating lozenges, or when lozenges start to dominate the screen. Don't mix primary and subtle lozenges on a screen.</p>
 
-<h2 class="sg-h2">Default button</h2>
-<p class="sg-p">The default button applies to most use cases. When you add the default button to your interface, it appears enabled and ready to use.</p>
+<h2 class="sg-h2" id="lozengePrimary">Lozenges Primary</h2>
+<h3 class="sg-h3">Markup</h3>
+<p class="sg-p">Simply a span with base class and type class. When no type class added, the default lozenge gets a blue background color. (Design team?)</p>
 
 
-<article class="sg-example" id="buttonsDefault">
+
+<article class="sg-example" id="lozengePrimary">
     
     <section class="sg-example__render">
-        <button class="tuiButton tst-button-default">Default</button>
-    </section>
-    
-    
-    <section class="sg-example__source">
-        <pre><code class="html">&lt;button class=&#34;tuiButton tst-button-default&#34;&gt;Default&lt;/button&gt;</code></pre>
-    </section>
-    
-</article>
-
-
-
-
-
-
-<h2 class="sg-h2" id="tocmodifiers">Modifiers</h2>
-<dl class="">
-    <dt class="sg-dt">Primary</dt>
-    <dd class="sg-dd">To call attention to an action on a form, or highlight the strongest call to action on a page. Primary buttons should only appear once per screen (not including the application header or in a modal dialog). Keep in mind that not every screen needs a primary button.</dd>
-    <dt class="sg-dt">Subtle</dt>
-    <dd class="sg-dd">Use when a toolbar or default buttons would draw attention away from more important content. It is often used at the top of a page or section and must use an icon and label.</dd>
-    <dt class="sg-dt">Caution</dt>
-    <dd class="sg-dd">Only use this button type to call increased attention to an action that can have irreversible consequences.</dd>
-</dl>
-
-
-
-<article class="sg-example" id="buttonsModifiers">
-    
-    <section class="sg-example__render">
-        <button class="tuiButton tuiButton--primary">Primary</button>
-<button class="tuiButton tuiButton--subtle">Subtle</button>
-<button class="tuiButton tuiButton--caution">Caution</button>
+        <span class="tuiLozenge">Default lozenge</span>
+<span class="tuiLozenge tuiLozenge--blue-navy">Blue Navy</span>
+<span class="tuiLozenge tuiLozenge--blue-light">Blue Light</span>
+<span class="tuiLozenge tuiLozenge--blue-medium">Blue Medium</span>
+<span class="tuiLozenge tuiLozenge--green">Green</span>
+<span class="tuiLozenge tuiLozenge--yellow">Yellow</span>
+<span class="tuiLozenge tuiLozenge--orange">Orange</span>
+<span class="tuiLozenge tuiLozenge--red">Red</span>
+<span class="tuiLozenge tuiLozenge--pink">Pink</span>
+<span class="tuiLozenge tuiLozenge--gray">Gray</span>
 
     </section>
     
     
     <section class="sg-example__source">
-        <pre><code class="html">&lt;button class=&#34;tuiButton tuiButton--primary&#34;&gt;Primary&lt;/button&gt;
-&lt;button class=&#34;tuiButton tuiButton--subtle&#34;&gt;Subtle&lt;/button&gt;
-&lt;button class=&#34;tuiButton tuiButton--caution&#34;&gt;Caution&lt;/button&gt;
+        <pre><code class="html">&lt;span class=&#34;tuiLozenge&#34;&gt;Default lozenge&lt;/span&gt;
+&lt;span class=&#34;tuiLozenge tuiLozenge--blue-navy&#34;&gt;Blue Navy&lt;/span&gt;
+&lt;span class=&#34;tuiLozenge tuiLozenge--blue-light&#34;&gt;Blue Light&lt;/span&gt;
+&lt;span class=&#34;tuiLozenge tuiLozenge--blue-medium&#34;&gt;Blue Medium&lt;/span&gt;
+&lt;span class=&#34;tuiLozenge tuiLozenge--green&#34;&gt;Green&lt;/span&gt;
+&lt;span class=&#34;tuiLozenge tuiLozenge--yellow&#34;&gt;Yellow&lt;/span&gt;
+&lt;span class=&#34;tuiLozenge tuiLozenge--orange&#34;&gt;Orange&lt;/span&gt;
+&lt;span class=&#34;tuiLozenge tuiLozenge--red&#34;&gt;Red&lt;/span&gt;
+&lt;span class=&#34;tuiLozenge tuiLozenge--pink&#34;&gt;Pink&lt;/span&gt;
+&lt;span class=&#34;tuiLozenge tuiLozenge--gray&#34;&gt;Gray&lt;/span&gt;
 </code></pre>
     </section>
     
 </article>
 
 
+<h2 class="sg-h2" id="lozengeSubtle">Lozenges Subtle</h2>
+<h3 class="sg-h3">Markup</h3>
+<p class="sg-p">Same markup as in primary lozenges but by adding the class <em>tuiLozenge--subtle</em> to the span.</p>
 
 
 
-
-<h2 class="sg-h2">States</h2>
-<h3 class="sg-h3">Disabled</h3>
-<p class="sg-p">Use when another action has to be completed first, such as changing a value in a field or waiting for a system response. It is used only with default and primary buttons, and it is normally dimmed until it is enabled.</p>
-
-
-
-<article class="sg-example" id="buttonsDisabled">
+<article class="sg-example" id="lozengeSubtle">
     
     <section class="sg-example__render">
-        <button class="tuiButton" disabled="disabled">Disabled Default</button>
-<button class="tuiButton tuiButton--primary" disabled="disabled">Disabled Primary</button>
-<button class="tuiButton tuiButton--subtle" disabled="disabled">Disabled Subtle</button>
-<button class="tuiButton tuiButton--caution" disabled="disabled">Disabled Caution</button>
+        <span class="tuiLozenge tuiLozenge--subtle">Subtle Default</span>
+<span class="tuiLozenge tuiLozenge--subtle tuiLozenge--blue-navy">Subtle Blue Navy</span>
+<span class="tuiLozenge tuiLozenge--subtle tuiLozenge--blue-light">Subtle Blue Light</span>
+<span class="tuiLozenge tuiLozenge--subtle tuiLozenge--blue-medium">Subtle Blue Medium</span>
+<span class="tuiLozenge tuiLozenge--subtle tuiLozenge--green">Subtle Green</span>
+<span class="tuiLozenge tuiLozenge--subtle tuiLozenge--yellow">Subtle Yellow</span>
+<span class="tuiLozenge tuiLozenge--subtle tuiLozenge--orange">Subtle Orange</span>
+<span class="tuiLozenge tuiLozenge--subtle tuiLozenge--red">Subtle Red</span>
+<span class="tuiLozenge tuiLozenge--subtle tuiLozenge--pink">Subtle Pink</span>
+<span class="tuiLozenge tuiLozenge--subtle tuiLozenge--gray">Subtle Gray</span>
 
     </section>
     
     
     <section class="sg-example__source">
-        <pre><code class="html">&lt;button class=&#34;tuiButton&#34; disabled=&#34;disabled&#34;&gt;Disabled Default&lt;/button&gt;
-&lt;button class=&#34;tuiButton tuiButton--primary&#34; disabled=&#34;disabled&#34;&gt;Disabled Primary&lt;/button&gt;
-&lt;button class=&#34;tuiButton tuiButton--subtle&#34; disabled=&#34;disabled&#34;&gt;Disabled Subtle&lt;/button&gt;
-&lt;button class=&#34;tuiButton tuiButton--caution&#34; disabled=&#34;disabled&#34;&gt;Disabled Caution&lt;/button&gt;
+        <pre><code class="html">&lt;span class=&#34;tuiLozenge tuiLozenge--subtle&#34;&gt;Subtle Default&lt;/span&gt;
+&lt;span class=&#34;tuiLozenge tuiLozenge--subtle tuiLozenge--blue-navy&#34;&gt;Subtle Blue Navy&lt;/span&gt;
+&lt;span class=&#34;tuiLozenge tuiLozenge--subtle tuiLozenge--blue-light&#34;&gt;Subtle Blue Light&lt;/span&gt;
+&lt;span class=&#34;tuiLozenge tuiLozenge--subtle tuiLozenge--blue-medium&#34;&gt;Subtle Blue Medium&lt;/span&gt;
+&lt;span class=&#34;tuiLozenge tuiLozenge--subtle tuiLozenge--green&#34;&gt;Subtle Green&lt;/span&gt;
+&lt;span class=&#34;tuiLozenge tuiLozenge--subtle tuiLozenge--yellow&#34;&gt;Subtle Yellow&lt;/span&gt;
+&lt;span class=&#34;tuiLozenge tuiLozenge--subtle tuiLozenge--orange&#34;&gt;Subtle Orange&lt;/span&gt;
+&lt;span class=&#34;tuiLozenge tuiLozenge--subtle tuiLozenge--red&#34;&gt;Subtle Red&lt;/span&gt;
+&lt;span class=&#34;tuiLozenge tuiLozenge--subtle tuiLozenge--pink&#34;&gt;Subtle Pink&lt;/span&gt;
+&lt;span class=&#34;tuiLozenge tuiLozenge--subtle tuiLozenge--gray&#34;&gt;Subtle Gray&lt;/span&gt;
 </code></pre>
     </section>
-    
-</article>
-
-
-<h3 class="sg-h3">Active</h3>
-<p class="sg-p">Indecates the button is pressed.</p>
-
-
-
-<article class="sg-example" id="buttonsStates">
-    
-    <section class="sg-example__render">
-        <button class="tuiButton tuiButton-is-active">Default Active</button>
-<button class="tuiButton tuiButton--primary tuiButton-is-active">Primary Active</button>
-<button class="tuiButton tuiButton--subtle tuiButton-is-active">Subtle Active</button>
-<button class="tuiButton tuiButton--caution tuiButton-is-active">Caution Active</button>
-
-    </section>
-    
-    
-    <section class="sg-example__source">
-        <pre><code class="html">&lt;button class=&#34;tuiButton tuiButton-is-active&#34;&gt;Default Active&lt;/button&gt;
-&lt;button class=&#34;tuiButton tuiButton--primary tuiButton-is-active&#34;&gt;Primary Active&lt;/button&gt;
-&lt;button class=&#34;tuiButton tuiButton--subtle tuiButton-is-active&#34;&gt;Subtle Active&lt;/button&gt;
-&lt;button class=&#34;tuiButton tuiButton--caution tuiButton-is-active&#34;&gt;Caution Active&lt;/button&gt;
-</code></pre>
-    </section>
-    
-</article>
-
-
-
-
-
-
-<h2 class="sg-h2">Semantics</h2>
-<h3 class="sg-h3">Anchors</h3>
-<p class="sg-p">You can use anchors as underlying elements.</p>
-
-
-
-<article class="sg-example" id="buttonsSemanticsAnchors">
-    
-    <section class="sg-example__render">
-        <a class="tuiButton" href="components/buttons/">Default</a>
-<a class="tuiButton tuiButton--primary" href="components/buttons/">Primary</a>
-<a class="tuiButton tuiButton--subtle" href="components/buttons/">Subtle</a>
-<a class="tuiButton tuiButton--caution" href="components/buttons/">Caution</a>
-
-    </section>
-    
-    
-    <section class="sg-example__source">
-        <pre><code class="html">&lt;a class=&#34;tuiButton&#34; href=&#34;components/buttons/&#34;&gt;Default&lt;/a&gt;
-&lt;a class=&#34;tuiButton tuiButton--primary&#34; href=&#34;components/buttons/&#34;&gt;Primary&lt;/a&gt;
-&lt;a class=&#34;tuiButton tuiButton--subtle&#34; href=&#34;components/buttons/&#34;&gt;Subtle&lt;/a&gt;
-&lt;a class=&#34;tuiButton tuiButton--caution&#34; href=&#34;components/buttons/&#34;&gt;Caution&lt;/a&gt;
-</code></pre>
-    </section>
-    
-</article>
-
-
-<h3 class="sg-h3">Inputs</h3>
-<p class="sg-p">You can use inputs as underlying elements. For buttons, available types are: button, submit and reset.</p>
-
-
-
-<article class="sg-example" id="buttonsSemantics">
-    
-    <section class="sg-example__render">
-        <input type="button" class="tuiButton" value="Button">
-<input type="submit" class="tuiButton tuiButton--primary" value="Submit">
-<input type="reset" class="tuiButton tuiButton--caution" value="Reset">
-
-    </section>
-    
-    
-    <section class="sg-example__source">
-        <pre><code class="html">&lt;input type=&#34;button&#34; class=&#34;tuiButton&#34; value=&#34;Button&#34; /&gt;
-&lt;input type=&#34;submit&#34; class=&#34;tuiButton tuiButton--primary&#34; value=&#34;Submit&#34; /&gt;
-&lt;input type=&#34;reset&#34; class=&#34;tuiButton tuiButton--caution&#34; value=&#34;Reset&#34; /&gt;
-</code></pre>
-    </section>
-    
-</article>
-
-
-
-
-<h2 class="sg-h2">Guidelines</h2>
-
-<h3 class="sg-h3">Labels</h3>
-<p class="sg-p">Make sure the purpose of the button is clear to the user. Use concise text that clearly describes the action the button performs. Labels are sentence case and are often a single word, a verb.</p>
-
-
-
-<article class="sg-example" id="buttonOrder">
-    
-    <section class="sg-example__render">
-        <button class="tuiButton tuiButton--primary">Log work</button>
-<button class="tuiButton">Done</button>
-<button class="tuiButton tuiButton--caution">Delete worklog</button>
-<button class="tuiButton tuiButton--subtle">Cancel</button>
-
-    </section>
-    
-    
-</article>
-
-
-<h3 class="sg-h3">Order</h3>
-<p class="sg-p">Buttons are right-aligned on the screen. Place the affirmative or expected action on the left, the dismissive action on the right. The exception to the rule is the "Back" button, which would be on the left.</p>
-
-
-
-<article class="sg-example" id="buttonOrder">
-    
-    <section class="sg-example__render">
-        <button class="tuiButton tuiButton--primary">Primary</button>
-<button class="tuiButton">Default</button>
-<button class="tuiButton tuiButton--subtle">Subtle</button>
-
-    </section>
-    
     
 </article>
             </div>
